@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #060606;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+}
+
+/* Top Container */
+.top-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+/* Editor */
+.editor {
+    width: 33%;
+    height: 100%;
+    color: white;
+    padding: 8px;
+}
+
+.editor textarea:focus {
+    outline: 0;
+}
+
+.editor-tab {
+    display: flex;
+    background-color: #1d1e22;
+    border-bottom: 2px solid #060606;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editor-tab h4 {
+    color: #aaaebc;
+}
+
+.editor textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1e22;
+    color: #a7925a;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Bottom Container */
+.bottom-container {
+    width: 100%;
+    height: 50%;
+}
+
+#output {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
+
+/* NavBar */
+
+.navbar {
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar p {
+    color: white;
+}
+
+.navbar img {
+    width: 38px;
+    filter: invert(100%);
+    object-fit: contain;
+}
+
+button {
+    margin-right: 15px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: hsla(227, 12%, 30%, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.left-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-bar p {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+.left-bar i {
+    font-size: 18px;
+    filter: invert(1);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+/* Buttons */
+.buttons {
+    display: none;
+}
+
+.buttons button {
+    font-size: 13px;
+}
+
+/* Media Query for hover support */
+@media (hover: hover) {
+    .buttons button:hover {
+        background-color: #E90064;
+        transition: all 0.1s;
+    }
+
+    .navbar button:hover {
+        background-color: #E90064;
+        transition: all 0.1s;
+    }
+}
+
+/* Responsive for Result Container */
+.editor-container {
+    display: none;
+}
+
+.output-console {
+    height: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .buttons {
+        display: flex;
+        gap: 0.2vh;
+        margin-left: 10px;
+        margin-bottom: -8px;
+        margin-top: 20px;
+    }
+
+    .buttons button {
+        margin: 0;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .editor-one,
+    .editor-two,
+    .editor-three {
+        width: 100%;
+    }
+
+    .editor-two {
+        display: none;
+    }
+
+    .editor-three {
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCanvas</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9183/9183237.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left-bar">
+                <img src="https://cdn-icons-png.flaticon.com/512/9355/9355360.png" alt="Company Logo">
+                <div class="icons">
+                    <p>CodeCanvas</p>
+                    <i class="fa-brands fa-codepen"></i>
+                </div>
+            </div>
+            <div>
+                <button class="run-button">Run</button>
+                <button class="delete-button">Clear</button>
+            </div>
+        </nav>
+
+        <div class="buttons">
+            <button class="html-btn">HTML</button>
+            <button class="css-btn">CSS</button>
+            <button class="js-btn">JavaScript</button>
+            <button class="result-btn">Result</button>
+        </div>
+
+        <div class="top-container">
+            <div class="editor editor-one">
+                <div class="editor-tab">
+                    <h4>HTML</h4>
+                    <img src="images/html-5.png" width="30px" height="30px" alt="">
+                </div>
+                <textarea class="html-editor" autofocus></textarea>
+            </div>
+
+            <div class="editor editor-two editor-hidden">
+                <div class="editor-tab">
+                    <h4>CSS</h4>
+                    <img src="images/css-3.png" width="30px" height="30px" alt="">
+                </div>
+                <textarea class="css-editor"></textarea>
+            </div>
+
+            <div class="editor editor-three editor-hidden">
+                <div class="editor-tab">
+                    <h4>JavaScript</h4>
+                    <img src="images/javascript.png" width="30px" height="30px" alt="">
+                </div>
+                <textarea class="js-editor"></textarea>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
